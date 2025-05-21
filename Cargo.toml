@@ -1,0 +1,31 @@
+[package]
+name = "grimoire-css-watcher"
+version = "0.1.0"
+edition = "2021"
+authors = ["Dmitrii Shatokhin <dmtrshatokhin@gmail.com>"]
+description = "A file watcher for Grimoire CSS"
+license = "MIT"
+keywords = ["css", "css-compiler", "styling", "web", "system"]
+categories = ["web-programming", "development-tools"]
+homepage = "https://github.com/persevie/grimoire-css-watcher"
+documentation = "https://docs.rs/grimoire-css-watcher"
+repository = "https://github.com/persevie/grimoire-css-watcher"
+include = ["src/**", "Cargo.toml", "README.md", "LICENSE"]
+
+[profile.release]
+lto = true
+codegen-units = 1
+
+[dependencies]
+notify = "6.1.1"
+notify-debouncer-mini = "0.4.1"
+clap = { version = "4.5.1", features = ["derive"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+glob = "0.3.1"
+anyhow = "1.0.79"
+thiserror = "1.0.56"
+log = "0.4.20"
+env_logger = "0.11.1"
+colored = "2.0.4"
+ctrlc = "3.4.1"
