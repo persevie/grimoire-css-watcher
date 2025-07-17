@@ -1,15 +1,15 @@
 [package]
-name = "grimoire-css-watcher"
-version = "0.1.2"
+name = "grimoire_css_watcher"
+version = "0.1.0"
 edition = "2021"
 authors = ["Dmitrii Shatokhin <dmtrshatokhin@gmail.com>"]
-description = "DEPRECATED: Use grimoire_css_watcher instead. A file watcher for Grimoire CSS"
+description = "A file watcher for Grimoire CSS"
 license = "MIT"
 keywords = ["css", "css-compiler", "styling", "web", "system"]
 categories = ["web-programming", "development-tools"]
-homepage = "https://github.com/persevie/grimoire-css-watcher"
-documentation = "https://docs.rs/grimoire-css-watcher"
-repository = "https://github.com/persevie/grimoire-css-watcher"
+homepage = "https://github.com/persevie/grimoire_css_watcher"
+documentation = "https://docs.rs/grimoire_css_watcher"
+repository = "https://github.com/persevie/grimoire_css_watcher"
 include = ["src/**", "Cargo.toml", "README.md", "LICENSE"]
 
 [profile.release]

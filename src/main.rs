@@ -29,13 +29,6 @@ struct Args {
 }
 
 fn main() -> Result<()> {
-    // Show deprecation warning
-    eprintln!("{}", "⚠️  WARNING: This crate 'grimoire-css-watcher' is DEPRECATED!".yellow().bold());
-    eprintln!("{}", "Please use 'grimoire_css_watcher' instead.".yellow());
-    eprintln!("{}", "Install with: cargo install grimoire_css_watcher".cyan());
-    eprintln!("{}", "More info: https://crates.io/crates/grimoire_css_watcher".cyan());
-    eprintln!();
-
     let args = Args::parse();
 
     // Set up logging
