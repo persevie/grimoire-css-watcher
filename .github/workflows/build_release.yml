@@ -48,23 +48,23 @@ jobs:
           - name: linux_x86_64
             runs-on: ubuntu-latest
             target: x86_64-unknown-linux-gnu
-            artifact_name: grimoire-css-watcher-linux-x86_64
-            artifact_path: target/x86_64-unknown-linux-gnu/release/grimoire-css-watcher
+            artifact_name: grimoire_css_watcher-linux-x86_64
+            artifact_path: target/x86_64-unknown-linux-gnu/release/grimoire_css_watcher
           - name: macos_x86_64
             runs-on: macos-latest
             target: x86_64-apple-darwin
-            artifact_name: grimoire-css-watcher-macos-x86_64
-            artifact_path: target/x86_64-apple-darwin/release/grimoire-css-watcher
+            artifact_name: grimoire_css_watcher-macos-x86_64
+            artifact_path: target/x86_64-apple-darwin/release/grimoire_css_watcher
           - name: macos_arm64
             runs-on: macos-latest
             target: aarch64-apple-darwin
-            artifact_name: grimoire-css-watcher-macos-arm64
-            artifact_path: target/aarch64-apple-darwin/release/grimoire-css-watcher
+            artifact_name: grimoire_css_watcher-macos-arm64
+            artifact_path: target/aarch64-apple-darwin/release/grimoire_css_watcher
           - name: windows_x86_64
             runs-on: windows-latest
             target: x86_64-pc-windows-msvc
-            artifact_name: grimoire-css-watcher-windows-x86_64.exe
-            artifact_path: target/x86_64-pc-windows-msvc/release/grimoire-css-watcher.exe
+            artifact_name: grimoire_css_watcher-windows-x86_64.exe
+            artifact_path: target/x86_64-pc-windows-msvc/release/grimoire_css_watcher.exe
 
     steps:
       - name: Checkout Code
@@ -183,7 +183,7 @@ jobs:
         with:
           tag_name: ${{ needs.determine_release.outputs.NEW_TAG }}
           files: ./artifacts/**/*
-          body: "Release of grimoire-css-watcher version ${{ needs.determine_release.outputs.NEW_TAG }}"
+          body: "Release of grimoire_css_watcher version ${{ needs.determine_release.outputs.NEW_TAG }}"
           draft: false
           prerelease: false
         env:
