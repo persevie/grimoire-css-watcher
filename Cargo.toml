@@ -1,6 +1,6 @@
 [package]
 name = "grimoire-css-watcher"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["Dmitrii Shatokhin <dmtrshatokhin@gmail.com>"]
 description = "DEPRECATED: Use grimoire_css_watcher instead. A file watcher for Grimoire CSS"
